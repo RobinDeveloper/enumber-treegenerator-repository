@@ -320,7 +320,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/BambooForestGenerator.cs"
+"Assets/Scripts/BambooLeaf.cs"
 "Assets/Scripts/BambooTree.cs"
+"Assets/Scripts/EnumberDataParser.cs"
+"Assets/Scripts/Molecule.cs"
 -langversion:8.0
 
 /deterministic

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637673097644171591
-    m_Hash: 3295607341
+      ticks: 637685390986331338
+    m_Hash: 3916239311
   m_LockFileStatus:
     m_FilePath: C:/Users/robin/Documents/Artez/Design by information/enumber-treegenerator-repository/enumber-treegenerator-project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637673097644256399
-    m_Hash: 1496291629
+      ticks: 637685390986415664
+    m_Hash: 1726939434
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -115,6 +115,10 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.8.0
     - 1.9.0
+    - 1.10.2
+    - 1.11.2
+    - 1.12.5
+    - 1.13.5
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -133,6 +137,10 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.8.0
     - 1.9.0
+    - 1.10.2
+    - 1.11.2
+    - 1.12.5
+    - 1.13.5
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -498,12 +506,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.textmeshpro@3.0.4
+- packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
-  version: 3.0.4
+  version: 3.0.6
   source: 1
-  resolvedPath: C:\Users\robin\Documents\Artez\Design by information\enumber-treegenerator-repository\enumber-treegenerator-project\Library\PackageCache\com.unity.textmeshpro@3.0.4
+  resolvedPath: C:\Users\robin\Documents\Artez\Design by information\enumber-treegenerator-repository\enumber-treegenerator-project\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -650,13 +658,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637492944820000000
+  datePublishedTicks: 637547111200000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-    revision: e2f8dffb26de9a130d5b2140d83891d9a7825330
+    revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
     path: 
   unityLifecycle:
     version: 
