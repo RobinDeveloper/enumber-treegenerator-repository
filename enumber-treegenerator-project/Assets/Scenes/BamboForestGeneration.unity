@@ -956,6 +956,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7405846476849834440, guid: c6308cb7062fac34e8e50600086b12a1, type: 3}
   m_PrefabInstance: {fileID: 1273508893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1462040193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1462040195}
+  - component: {fileID: 1462040194}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1462040194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462040193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c64385334d1aa4e884fb89b5dcde21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 1654102822}
+  m_Speed: 10
+--- !u!4 &1462040195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462040193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.47913, y: 7, z: 20.913269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1498860177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1106,8 +1151,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654102822}
-  m_LocalRotation: {x: 0.22157122, y: 0.49667343, z: -0.13284867, w: 0.828597}
-  m_LocalPosition: {x: 5.637, y: 15.758, z: 13.556063}
+  m_LocalRotation: {x: -0.08161183, y: 0.33270773, z: 0.028912622, w: 0.939047}
+  m_LocalPosition: {x: 8.724284, y: 2.6131306, z: 9.780775}
   m_LocalScale: {x: 1, y: 1, z: 3.397}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1452,28 +1497,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7decfd32202325e48b2e2ecd1611a3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BambooStemPrefab: {fileID: 5958099461782828300, guid: 310e9a8338c3c6c47bc34a079452e7fe, type: 3}
+  m_BambooStemPrefab: {fileID: 1636149787828781919, guid: f5dc9b9155b23d4438ce87872ee3cfca, type: 3}
   m_Height:
     Minimum: 1
-    Maximum: 10
+    Maximum: 3
   m_Thickness:
     Minimum: 0.1
     Maximum: 0.5
+  m_Offset: 2
   m_BambooLeafPrefab: {fileID: 7136951742813558478, guid: 0b01e03926045724a919bb2d4edd6281, type: 3}
   m_MoleculeNamePrefab: {fileID: 4803229321866049588, guid: 4bb502bdc9791454e9b6e62c751f1f3b, type: 3}
-  m_BambooCount: 20
-  m_Offset: 2
-  m_Molecules:
-  - m_Enumber: E300
-    m_Amount: 4
-  - m_Enumber: E500
-    m_Amount: 5
-  - m_Enumber: E450
-    m_Amount: 10
-  - m_Enumber: E320
-    m_Amount: 1
-  - m_Enumber: E466
-    m_Amount: 2
 --- !u!1001 &1995987578
 PrefabInstance:
   m_ObjectHideFlags: 0

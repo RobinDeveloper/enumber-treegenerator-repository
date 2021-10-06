@@ -18,16 +18,13 @@ public class BambooLeaf : MonoBehaviour
         m_MoleculeNamePrefab = _moleculeNamePrefab;
         GenerateEnumbers();
     }
-    
+
     private void GenerateEnumbers()
     {
-        for (int i = 0; i < m_Molecule.Amount; i++)
-        {
-            GameObject eNumber = Instantiate(m_MoleculeNamePrefab, m_Parent.transform, true) as GameObject;
-            eNumber.GetComponent<TMP_Text>().text = m_Molecule.ENumber.ToString();
-            Quaternion rotate = eNumber.transform.rotation;
-            eNumber.transform.Rotate(new Vector3(Random.Range(0,180), rotate.y, rotate.z), Space.Self);
-            eNumber.transform.position = m_Parent.transform.position;
-        }
+        GameObject eNumber = Instantiate(m_MoleculeNamePrefab, m_Parent.transform, true) as GameObject;
+        eNumber.GetComponent<TMP_Text>().text = m_Molecule.ENumber.ToString();
+        Quaternion rotate = eNumber.transform.rotation;
+        eNumber.transform.Rotate(new Vector3(rotate.x, Random.Range(0, 180), rotate.z), Space.Self);
+        eNumber.transform.position = m_Parent.transform.position;
     }
 }

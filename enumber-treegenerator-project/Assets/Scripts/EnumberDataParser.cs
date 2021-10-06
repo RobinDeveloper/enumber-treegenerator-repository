@@ -28,14 +28,13 @@ public class EnumberDataParser
         for (int i = 0; i < moleculeJsons.Count; i++)
         {
             List<Molecule> moleculesForDay = new List<Molecule>();
-            Array.Sort(moleculeJsons[i].Enumber, StringComparer.InvariantCulture);
             for (int j = 0; j < moleculeJsons[i].Enumber.Length; j++)
             {
-                //moleculesForDay.Add(new Molecule(moleculeJsons[i].Enumber[j]));
+                moleculesForDay.Add(new Molecule(moleculeJsons[i].Enumber[j]));
             }
+            moleculesDays.Add(moleculesForDay);
         }
         
-
         return moleculesDays;
     }
 }

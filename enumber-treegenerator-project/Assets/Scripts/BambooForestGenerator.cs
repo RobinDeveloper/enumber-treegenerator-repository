@@ -23,15 +23,15 @@ public class BambooForestGenerator : MonoBehaviour
     [SerializeField] private GameObject m_BambooLeafPrefab;
     [SerializeField] private GameObject m_MoleculeNamePrefab;
 
-    [Header("Temp variables")]
-    [SerializeField] private Int32 m_BambooCount;
-    
-    [SerializeField] private List<Molecule> m_Molecules;
+    private List<List<Molecule>> m_Molecules;
 
     private List<GameObject> m_BambooTrees = new List<GameObject>();
     
     private void Start()
     {
+        EnumberDataParser enumberDataParser = new EnumberDataParser();
+        m_Molecules = enumberDataParser.GetMolecules();
+        
         GenerateForest();
     }
 
@@ -55,7 +55,7 @@ public class BambooForestGenerator : MonoBehaviour
     
     private void GenerateForest()
     {
-        int iterationValue = m_BambooCount / 2;
+        int iterationValue = m_Molecules.Count / 2;
         for (int x = 0; x < iterationValue; x++)
         {
             for (int z = 0; z < iterationValue; z++)
@@ -66,7 +66,7 @@ public class BambooForestGenerator : MonoBehaviour
                     new Vector3(thickness, Random.Range(m_Height.Minimum, m_Height.Maximum), thickness);
                 bambooTree.transform.position = new Vector3((x * Random.Range(m_Offset - 0.2f, m_Offset + 0.2f)) + 10, 0, (z * Random.Range(m_Offset - 0.2f, m_Offset + 0.2f)) + 10);
 
-                bambooTree.AddComponent<BambooTree>().SetupLeafes(m_Molecules, m_BambooLeafPrefab, m_MoleculeNamePrefab, bambooTree);
+                bambooTree.AddComponent<BambooTree>().SetupLeafes(m_Molecules[x+z], m_BambooLeafPrefab, m_MoleculeNamePrefab, bambooTree);
                 
                 m_BambooTrees.Add(bambooTree);
             }

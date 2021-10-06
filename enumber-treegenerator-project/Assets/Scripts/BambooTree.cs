@@ -24,8 +24,8 @@ public class BambooTree : MonoBehaviour
         {
             GameObject leaf = Instantiate(m_LeafPrefab, this.gameObject.transform, true) as GameObject;
             leaf.GetComponent<BambooLeaf>().SetupLeaf(m_Molecules[i], leaf, m_MoleculeNamePrefab);
-            leaf.transform.localScale = Vector3.one * 0.5f;
-            leaf.transform.localPosition = new Vector3(0.5f, Random.Range(0.5f, 2), 0.5f);
+            leaf.transform.localScale = new Vector3(1, 1f / m_Parent.transform.localScale.y, 1f);
+            leaf.transform.localPosition = new Vector3(0.1f, Random.Range(1f, 7f), m_Parent.transform.localScale.z);
         }
     }
 }
